@@ -1,0 +1,7 @@
+my_app_vich_uploader_demo:
+    resource: "@MyAppVichUploaderDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

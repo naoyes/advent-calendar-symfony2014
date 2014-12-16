@@ -1,0 +1,4 @@
+services:
+#    my_app_vich_uploader_demo.example:
+#        class: MyApp\VichUploaderDemoBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
