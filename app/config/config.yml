@@ -75,3 +75,15 @@ swiftmailer:
 
 vich_uploader:
     db_driver: orm
+
+    mappings:
+        product_image:
+            uri_prefix:         /images/products
+            upload_destination: %kernel.root_dir%/../web/images/products
+            inject_on_load: true
+            directory_namer:    my_app_vich_uploader_demo.my_directory_namer.product
+            namer:              vich_uploader.namer_uniqid
+
+services:
+    my_app_vich_uploader_demo.my_directory_namer.product:
+        class: MyApp\VichUploaderDemoBundle\Service\ProductDirectoryNamer
